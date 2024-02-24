@@ -1,0 +1,15 @@
+{
+  "name": "it-academy_task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./Lesson_10/src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
