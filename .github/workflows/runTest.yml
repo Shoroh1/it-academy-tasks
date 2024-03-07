@@ -2,7 +2,7 @@ name: Run first test in CI
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "develop/test" ]
   pull_request:
     branches: [ "master" ]
 
