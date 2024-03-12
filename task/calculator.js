@@ -6,6 +6,7 @@
 class Calculator {
   constructor() {
   };
+
   /**
    *
    *
@@ -20,7 +21,8 @@ class Calculator {
     }
 
     return result;
-  };
+  }
+
   /**
    *
    *

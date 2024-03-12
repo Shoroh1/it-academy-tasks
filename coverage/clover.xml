@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1710090046144" clover="3.2.0">
-  <project timestamp="1710090046145" name="All files">
+<coverage generated="1710238163739" clover="3.2.0">
+  <project timestamp="1710238163739" name="All files">
     <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6" elements="18" coveredelements="18" complexity="0" loc="12" ncloc="12" packages="1" files="1" classes="1"/>
     <file name="calculator.js" path="Q:\it-academy_task\task\calculator.js">
       <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
-      <line num="17" count="3" type="stmt"/>
       <line num="18" count="3" type="stmt"/>
-      <line num="19" count="8" type="stmt"/>
-      <line num="22" count="3" type="stmt"/>
-      <line num="32" count="2" type="stmt"/>
-      <line num="33" count="2" type="stmt"/>
-      <line num="34" count="5" type="stmt"/>
+      <line num="19" count="3" type="stmt"/>
+      <line num="20" count="8" type="stmt"/>
+      <line num="23" count="3" type="stmt"/>
+      <line num="34" count="1" type="stmt"/>
+      <line num="35" count="1" type="stmt"/>
       <line num="36" count="2" type="stmt"/>
-      <line num="40" count="3" type="stmt"/>
-      <line num="44" count="3" type="stmt"/>
-      <line num="48" count="4" type="stmt"/>
-      <line num="52" count="1" type="stmt"/>
+      <line num="38" count="1" type="stmt"/>
+      <line num="42" count="3" type="stmt"/>
+      <line num="46" count="3" type="stmt"/>
+      <line num="50" count="4" type="stmt"/>
+      <line num="54" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
