@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3171fa9f-c389-4e1f-a645-f8cb3d66cbec" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Lesson_17/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_17/.npmrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_17/test/test.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Lesson_16" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2eg9t7QJj77F9HjBq80fgeRGxWu" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Mocha.ChromeDriver.Part 2: should search button and write text in search Field .executor": "Run",
+    "Mocha.ChromeDriver.executor": "Run",
+    "Mocha.ChromeDriver.should .executor": "Run",
+    "Mocha.Lesson_17\\test\\test.spec.js.executor": "Run",
+    "Node.js.test.cjs.executor": "Run",
+    "Node.js.test.js.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Lesson__17",
+    "javascript.nodejs.core.library.configured.version": "21.5.0",
+    "javascript.nodejs.core.library.typings.version": "20.12.4",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs.mocha.mocha_node_package_dir": "Q:/it-academy_task/Lesson_17/node_modules/mocha",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\admin\\AppData\\Local\\Programs\\Aqua\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Mocha.Lesson_17\test\test.spec.js">
+    <configuration name="test.cjs" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Lesson_17/test.cjs" working-dir="$PROJECT_DIR$/Lesson_17">
+      <method v="2" />
+    </configuration>
+    <configuration name="ChromeDriver" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/Lesson_17/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$/Lesson_17</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/Lesson_17/test/test.spec.js</test-file>
+      <test-names>
+        <name value="ChromeDriver" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="ChromeDriver.Part 2: should search button and write text in search Field " type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/Lesson_17/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$/Lesson_17</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>TEST</test-kind>
+      <test-file>$PROJECT_DIR$/Lesson_17/test/test.spec.js</test-file>
+      <test-names>
+        <name value="ChromeDriver" />
+        <name value="Part 2: should search button and write text in search Field " />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="ChromeDriver.should " type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/Lesson_17/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$/Lesson_17</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>TEST</test-kind>
+      <test-file>$PROJECT_DIR$/Lesson_17/test/test.spec.js</test-file>
+      <test-names>
+        <name value="ChromeDriver" />
+        <name value="should " />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Lesson_17\test\test.spec.js" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/Lesson_17/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$/Lesson_17</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>TEST_FILE</test-kind>
+      <test-file>$PROJECT_DIR$/Lesson_17/test/test.spec.js</test-file>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Mocha.Lesson_17\test\test.spec.js" />
+        <item itemvalue="Mocha.ChromeDriver.should " />
+        <item itemvalue="Mocha.ChromeDriver.Part 2: should search button and write text in search Field " />
+        <item itemvalue="Mocha.ChromeDriver" />
+        <item itemvalue="Node.js.test.cjs" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3171fa9f-c389-4e1f-a645-f8cb3d66cbec" name="Changes" comment="" />
+      <created>1712315570313</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1712315570313</updated>
+      <workItem from="1712315571740" duration="18454000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="mocha-javascript-test-runner">
+        <watch expression="extButt" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
