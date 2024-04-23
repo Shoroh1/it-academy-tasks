@@ -12,27 +12,27 @@ class MainPage extends Base {
     }
 
     get loginField() {
-        return this.page.locator('[name="USER_LOGIN"]')
+        return this.page.locator('input[name="USER_LOGIN"]')
     }
 
     get passwordField() {
-        return this.page.locator('[name="USER_PASSWORD"]')
+        return this.page.locator('input[name="USER_PASSWORD"]')
     }
 
     get loginButton() {
         return this.page.locator('.btn.btn-default.bold')
     }
 
-    get loginError() {
-        return this.page.locator('.alert.alert-danger')
+    get errorMessage() {
+        return this.page.locator('.alert.alert-danger > p');
     }
 
     get searchInputField() {
-        return this.page.locator('.search-input#title-search-input_fixed[placeholder="Поиск"]')
+        return this.page.locator('#header input[placeholder="Поиск"]');
     }
 
     get searchButton() {
-        return this.page.locator('.search-button-div [type="submit"]')
+        return this.page.locator('#header .search-button-div [type="submit"]')
     }
 
     get suggestCatalogMenu() {
@@ -44,7 +44,7 @@ class MainPage extends Base {
     }
 
     async getPageName(itemName) {
-        return this.page.locator(`//*[@id="pagetitle" and text()='${itemName}']`)
+        return this.page.locator(`//*[@id="pagetitle" and text()='${itemName}']`).all();
     }
 
     async cookiesButton() {
@@ -52,32 +52,24 @@ class MainPage extends Base {
         await this.cookiesExitButton.click();
     }
 
-    async loginPage(name, password) {
+    async loginPage() {
         let header = new Header(this.page)
-        let username;
         await header.openLoginMenu();
-       // await this.page.loginField.waitForDisplayed();
-        await this.loginField.click();
-        await this.loginField.setValue(name);
-        await this.passwordField.waitForDisplayed();
-        await this.passwordField.click();
-        await this.page.passwordField.setValue(password);
+        await this.loginField.fill('username');
+        await this.passwordField.fill('password');
         await this.loginButton.click();
     }
 
     async searchField() {
-        await header.writeTextInSearchPanel();
-        await this.searchInputField.waitForDisplayed();
-        await this.searchInputField.keyboard.type('iPhone')
-        await this.searchButton.waitForDisplayed;
+        let header = new Header(this.page)
+        await header.activateSearchPanel();
+        await this.searchInputField.fill('iPhone')
         await this.searchButton.click()
     }
 
-    async goToSuggestCatalogItemByNumber(suggestItemNumber, itemName) {
-        await this.suggestCatalogMenu.waitForDisplayed();
+    async goToSuggestCatalogItemByNumber(suggestItemNumber) {
         await this.suggestCatalogMenu.click();
         await this.suggestCatalogItem[suggestItemNumber].click();
-        await (await this.getPageName(itemName).waitForDisplayed);
     }
 
 }
