@@ -11,7 +11,9 @@ const test = base.extend({
     }
 })
 
-test('should error message to login page ', async ({page}) => {
+test('checking for incorrect login and password entry.' +
+    'to receive a corresponding message about entering an incorrect login and password', async ({page}) => {
+
     const mainPage = new MainPage(page);
     await mainPage.navigate('https://alloplus.by/');
     await mainPage.cookiesButton();
@@ -19,7 +21,7 @@ test('should error message to login page ', async ({page}) => {
     await expect(mainPage.errorMessage).toHaveText('Неверный логин или пароль')
 })
 
-test('should search input', async ({page}) => {
+test('Checking the functionality of the search field on the site', async ({page}) => {
     const mainPage = new MainPage(page);
     await mainPage.navigate('https://alloplus.by/')
     await mainPage.cookiesButton();
@@ -27,11 +29,10 @@ test('should search input', async ({page}) => {
     await expect(await page.url()).toEqual('https://alloplus.by/catalog/?q=iPhone&s=%D0%9F%D0%BE%D0%B8%D1%81%D0%BA')
 })
 
-test('should open the catalog page', async ({page}) => {
+test('opening a field on the Catalog website and moving to another page from the drop-down list', async ({page}) => {
     const mainPage = new MainPage(page);
     await mainPage.navigate('https://alloplus.by/')
     await mainPage.cookiesButton();
-    await mainPage.goToSuggestCatalogItemByNumber(2);
-    await mainPage.getPageName('Гаджеты')
-    await expect( page.getByTitle()).toEqual('Купить гаджеты в Минске | Гаджеты недорого')
+    await mainPage.goToSuggestCatalogItemByNumber();
+    await expect(mainPage.getTitleName).toHaveText('Гаджеты')
 })

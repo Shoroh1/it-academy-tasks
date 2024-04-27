@@ -7,6 +7,7 @@ class MainPage extends Base {
         super(page);
 
     }
+
     get cookiesExitButton() {
         return this.page.locator('.modal-popup > a');
     }
@@ -36,15 +37,16 @@ class MainPage extends Base {
     }
 
     get suggestCatalogMenu() {
-        return this.page.locator('.wrap > .dropdown-toggle[href="/catalog/"]');
+        return this.page.hover('#header .menu-item.dropdown.catalog.wide_menu')
     }
 
-    get suggestCatalogItem() {
-        return this.page.locator('.section_info a')
+
+    async goToCatalogPage() {
+        return this.page.locator(`a[href="/catalog/gadzhety/"] > span.name`).getByText("Гаджеты").click();
     }
 
-    async getPageName(itemName) {
-        return this.page.locator(`//*[@id="pagetitle" and text()='${itemName}']`).all();
+    get getTitleName() {
+        return this.page.locator('.page-top-main.page-top-main-shop');
     }
 
     async cookiesButton() {
@@ -67,11 +69,10 @@ class MainPage extends Base {
         await this.searchButton.click()
     }
 
-    async goToSuggestCatalogItemByNumber(suggestItemNumber) {
-        await this.suggestCatalogMenu.click();
-        await this.suggestCatalogItem[suggestItemNumber].click();
+    async goToSuggestCatalogItemByNumber() {
+        await this.suggestCatalogMenu;
+        await this.goToCatalogPage();
     }
-
 }
 
 
