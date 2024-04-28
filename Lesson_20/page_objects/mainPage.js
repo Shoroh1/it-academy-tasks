@@ -50,7 +50,6 @@ class MainPage extends Base {
     }
 
     async cookiesButton() {
-        //await this.cookiesExitButton.waitIsDisplayed();
         await this.cookiesExitButton.click();
     }
 
