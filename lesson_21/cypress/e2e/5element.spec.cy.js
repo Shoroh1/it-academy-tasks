@@ -2,6 +2,7 @@ const mainPage = require('../../page_object/mainPage');
 const cookies = require('../../page_object/components/cookies')
 const loginFrame = require('../../page_object/components/loginFrame')
 const smartphones = require('../../page_object/smartphonesPage')
+const searchField = require('../../page_object/components/search')
 
 
 describe('5element test', () => {
@@ -25,6 +26,13 @@ describe('5element test', () => {
     cookies.declineCookiesBtn.wait(2000).click()
     smartphones.selectManyPhones()
     expect(smartphones.elements.getItemInCarousel().should('have.length', 2))
+  });
+
+  it('search field validation ', () => {
+    cy.visit('https://5element.by/');
+    searchField.inputTextInSearchField('iPhone')
+    cookies.declineCookiesBtn.wait(2000).click()
+    expect((searchField.findError.should('contain', "404")))
   });
 
 })
